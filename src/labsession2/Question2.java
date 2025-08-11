@@ -1,0 +1,28 @@
+/*Write a Java program to create a class called 
+ * Vehicle with a method called drive(). 
+ * Create a subclass called Car that overrides the drive() 
+ * method to print "Repairing a car".
+ */
+
+package labsession2;
+
+class Vehicle {
+    public void drive() {
+        System.out.println("Driving a vehicle");
+    }
+}
+
+class Car extends Vehicle {
+    public void drive() {
+        System.out.println("Repairing a car");  
+    }
+}
+public class Question2 {
+	public static void main(String[] args) {
+		Vehicle obj = new Vehicle();
+        obj.drive();  
+
+        Car obj1 = new Car();
+        obj1.drive();
+	}
+}
