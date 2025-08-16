@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="UserTestSuite" verbose="1">
+
+  <test name="SanityAndSmokeTests">
+    <groups>
+      <run>
+        <include name="Sanity"/>
+        <include name="Smoke"/>
+        <exclude name="Regression"/>
+      </run>
+    </groups>
+
+    <classes>
+      <class name="com.wiprojuly.testing.TestNGGroup2"/>
+    </classes>
+  </test>
+
+</suite>
